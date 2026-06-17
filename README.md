@@ -24,10 +24,10 @@ User sends a prompt → API processes it → OpenAI generates story → Response
 ---
 
 ## 📁 Project Structure
+
 ai-story-generator/
 │
 ├── app/
-│   │
 │   ├── main.py
 │   │
 │   ├── Story/
@@ -47,3 +47,4 @@ ai-story-generator/
 ├── Dockerfile
 ├── docker-compose.yml
 └── README.md
+-----
