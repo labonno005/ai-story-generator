@@ -25,30 +25,26 @@ User sends a prompt → API processes it → OpenAI generates story → Response
 
 ## 📁 Project Structure
 
+```text
 ai-story-generator/
 │
-├── app/ 
+├── app/
+│   ├── main.py
+│   ├── Story/
+│   │   ├── story.py
+│   │   ├── openai_service.py
+│   │   └── story_schema.py
 │
-│ ├── main.py 
+│   ├── core/
+│   │   └── config.py
 │
-│ ├── Story/ 
-│ │
-│ │ ├── story.py 
-│ │ ├── openai_service.py 
-│ │ └── story_schema.py 
-│
-│ ├── core/
-│ │
-│ │ └── config.py 
-│
-│ └── utils/ 
-│ └── prompt_template.py 
+│   └── utils/
+│       └── prompt_template.py
 │
 ├── .env
-├── .gitignore 
-├── requirements.txt 
+├── .gitignore
+├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yml
 └── README.md
-
----
+```
