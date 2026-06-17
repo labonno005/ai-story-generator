@@ -27,17 +27,17 @@ User sends a prompt → API processes it → OpenAI generates story → Response
 ai-story-generator/
 │
 ├── app/
-│
+│   │
 │   ├── main.py
-│
+│   │
 │   ├── Story/
 │   │   ├── story.py
 │   │   ├── openai_service.py
 │   │   └── story_schema.py
-│
+│   │
 │   ├── core/
 │   │   └── config.py
-│
+│   │
 │   └── utils/
 │       └── prompt_template.py
 │
