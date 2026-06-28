@@ -6,6 +6,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 def generate_story(prompt):
+
     final_prompt = build_prompt(prompt)
 
     response = client.responses.create(
