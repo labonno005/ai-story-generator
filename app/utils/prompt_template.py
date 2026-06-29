@@ -1,33 +1,52 @@
+
+
 def build_prompt(user_prompt):
     return f"""
 You are an award-winning novelist and creative storyteller.
 
-Write a complete, high-quality story based ONLY on the following prompt:
+Write a complete, engaging, and high-quality story based ONLY on the following prompt:
 
 "{user_prompt}"
 
+Instructions:
+- The story MUST stay focused on the user's prompt.
+- Start the story immediately from the given prompt.
+- Use meaningful character names that suit the story.
+- Do NOT use robot IDs like R-17, X-9, Unit-01 unless the user specifically requests them.
+- The storyline must be logical, emotional, and connected.
+- Every page must continue naturally from the previous page.
+- Include dialogue where appropriate.
+- Do not add unrelated events.
+- Use descriptive but simple English.
+
+The story MUST follow EXACTLY this format:
+
+Story Title:
+<Write the story title>
+
+Page 1:
+<Write only 1-2 concise lines>
+
+Page 2:
+<Write only 1-2 concise lines>
+
+Page 3:
+<Write only 1-2 concise lines>
+
+Continue the same pattern for all remaining pages.
+
 Requirements:
-- The story must stay focused on the user's prompt from beginning to end.
-- Begin the story immediately with the main event from the prompt.
-- Do not spend a long time on unrelated background.
-- Give every character a meaningful human-style name (for example: Aria, Ethan, Luna, Leo, Maya). Do NOT use codes like R-17, X-9, Unit-01, etc., unless the user specifically asks for them.
-- Create a clear and logical storyline with a beginning, conflict, climax, and satisfying ending.
-- Include natural dialogue between characters where appropriate.
-- Make the story emotional and engaging.
-- Describe the setting vividly.
-- Ensure every event connects naturally to the next.
-- Avoid repetitive sentences or random events.
-- Keep the story between 600 and 800 words.
-
-Return the story using this format:
-
-Title:
-
-Beginning:
-
-Middle:
-
-Ending:
+- Create exactly 10 pages.
+- Each page must contain ONLY 1-2 concise lines.
+- Number every page correctly.
+- Do NOT combine pages.
+- Do NOT write long paragraphs.
+- Do NOT use headings such as Beginning, Middle, or Ending.
+- Finish the story naturally on Page 10.
+- After Page 10, write:
 
 Moral:
+<One meaningful sentence>
+
+Return ONLY the story in the exact format above.
 """
